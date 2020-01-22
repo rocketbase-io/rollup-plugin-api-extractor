@@ -1,0 +1,91 @@
+{
+  "name": "@rocketbase/rollup-plugin-api-extractor",
+  "version": "0.0.0-development",
+  "description": "Rollup Plugin for @microsoft/api-extractor",
+  "main": "dist/RollupPluginApiExtractor.js",
+  "module": "dist/RollupPluginApiExtractor.esm.js",
+  "unpkg": "dist/RollupPluginApiExtractor.js",
+  "types": "dist/RollupPluginApiExtractor.d.ts",
+  "since": "2020",
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup --config build/rollup.config.js",
+    "clean": "rimraf dist temp docs coverage",
+    "test": "jest",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --ext .ts --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rocketbase-io/rollup-plugin-api-extractor.git"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "microsoft",
+    "api",
+    "extractor",
+    "rocketbase"
+  ],
+  "author": "Rocketbase Team <team@rocketbase.io>",
+  "contributors": [
+    "Merlin Reichwald <merlin.reichwald@rocketbase.io>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rocketbase-io/rollup-plugin-api-extractor/issues"
+  },
+  "homepage": "https://github.com/rocketbase-io/rollup-plugin-api-extractor#readme",
+  "dependencies": {
+    "@microsoft/api-extractor": "^7.7.5",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@microsoft/api-documenter": "^7.7.8",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/commit-analyzer": "^7.0.0",
+    "@semantic-release/git": "^8.0.0",
+    "@semantic-release/github": "^6.0.1",
+    "@semantic-release/npm": "^6.0.0",
+    "@semantic-release/release-notes-generator": "^7.3.5",
+    "@types/jest": "^24.9.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "@wessberg/rollup-plugin-ts": "^1.2.13",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.0",
+    "jest-preset-typescript": "^1.2.0",
+    "lint-staged": "^10.0.1",
+    "prettier": "^1.19.1",
+    "rollup": "^1.29.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-ts-paths": "^1.0.3",
+    "semantic-release": "^16.0.2",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e -V"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --ext .ts",
+      "git add"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
