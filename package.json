@@ -76,8 +76,10 @@
     "typescript": "^3.7.5"
   },
   "husky": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -e -V"
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e -V"
+    }
   },
   "lint-staged": {
     "*.{js,ts}": [
