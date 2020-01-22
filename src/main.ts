@@ -3,6 +3,7 @@ import { Config } from "src/config";
 import { generateConfig } from "src/generate-config";
 import { cleanupConfig } from "src/cleanup-config";
 
+/* istanbul ignore next */
 /**
  * Generates a config file for api-extractor, then executes it.
  * @param config - The plugin configuration
@@ -42,6 +43,7 @@ export default function({
   const cfg = { config, override, generatedConfigLocation, cleanup, invokeOptions };
   let ranBefore = false;
   return {
+    /* istanbul ignore next */
     async writeBundle(): Promise<void> {
       if (ranBefore) return;
       ranBefore = true;
