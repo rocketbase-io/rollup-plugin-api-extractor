@@ -75,7 +75,7 @@
     "ts-jest": "^24.3.0",
     "typescript": "^3.7.5"
   },
-  "gitHooks": {
+  "husky": {
     "pre-commit": "lint-staged",
     "commit-msg": "commitlint -e -V"
   },
