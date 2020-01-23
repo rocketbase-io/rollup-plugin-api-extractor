@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/rocketbase-io/rollup-plugin-api-extractor/compare/v1.0.2...v1.0.3) (2020-01-23)
+
+
+### Bug Fixes
+
+* await preparation of config ([5db4a5d](https://github.com/rocketbase-io/rollup-plugin-api-extractor/commit/5db4a5da17be7ba35bf50886324332f61b08c2a5))
+
 ## [1.0.2](https://github.com/rocketbase-io/rollup-plugin-api-extractor/compare/v1.0.1...v1.0.2) (2020-01-23)
 
 
