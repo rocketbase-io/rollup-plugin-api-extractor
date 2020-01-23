@@ -24,5 +24,5 @@ jobs:
       node_js: lts/*
       deploy:
         provider: script
-        cleanup: false
+        skip_cleanup: true
         script: npx -p @semantic-release/commit-analyzer -p @semantic-release/changelog -p @semantic-release/release-notes-generator -p @semantic-release/github -p @semantic-release/git -p @semantic-release/npm -p semantic-release semantic-release
