@@ -8,6 +8,6 @@ import { prepareConfig } from "src/prepare-config";
  * @internal
  */
 export async function generateConfig(config: Config): Promise<void> {
-  const content = prepareConfig(config);
+  const content = await prepareConfig(config);
   await fs.writeFile(config.generatedConfigLocation, JSON.stringify(content, undefined, 2));
 }
