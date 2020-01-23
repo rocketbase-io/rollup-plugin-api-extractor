@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/rocketbase-io/rollup-plugin-api-extractor/compare/v1.0.0...v1.0.1) (2020-01-23)
+
+
+### Bug Fixes
+
+* skip cleanup for release step ([314d727](https://github.com/rocketbase-io/rollup-plugin-api-extractor/commit/314d727b363d259c9da426d1017eb46d19a177c4))
+
 # 1.0.0 (2020-01-22)
 
 
