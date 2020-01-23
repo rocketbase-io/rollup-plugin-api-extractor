@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/rocketbase-io/rollup-plugin-api-extractor/compare/v1.0.1...v1.0.2) (2020-01-23)
+
+
+### Bug Fixes
+
+* add api-extractor config template ([d5e2e77](https://github.com/rocketbase-io/rollup-plugin-api-extractor/commit/d5e2e7783ae3bb4161abbcaeb9d28967679bed5e))
+* add build script to release stage ([e977cd6](https://github.com/rocketbase-io/rollup-plugin-api-extractor/commit/e977cd6c76284ec1beda815e050a983f849f6681))
+
 ## [1.0.1](https://github.com/rocketbase-io/rollup-plugin-api-extractor/compare/v1.0.0...v1.0.1) (2020-01-23)
 
 
